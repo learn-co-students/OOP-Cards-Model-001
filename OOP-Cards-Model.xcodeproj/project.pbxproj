@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10C5D4881B79512A00F9CF4F /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5D4871B79512A00F9CF4F /* Card.m */; };
+		10C5D48B1B79513400F9CF4F /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5D48A1B79513400F9CF4F /* PlayingCard.m */; };
+		10C5D48E1B79513F00F9CF4F /* BaseballCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5D48D1B79513F00F9CF4F /* BaseballCard.m */; };
+		10C5D4911B7953D500F9CF4F /* BaseballPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5D4901B7953D500F9CF4F /* BaseballPlayer.m */; };
 		404F75B720B2496BAE31D058 /* libPods-OOP-Cards-ModelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19591EEAF47649EEA6965847 /* libPods-OOP-Cards-ModelTests.a */; };
 		44CFDE96189C389300238AA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE95189C389300238AA4 /* Foundation.framework */; };
 		44CFDE98189C389300238AA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE97189C389300238AA4 /* CoreGraphics.framework */; };
@@ -36,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10C5D4861B79512A00F9CF4F /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		10C5D4871B79512A00F9CF4F /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		10C5D4891B79513400F9CF4F /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		10C5D48A1B79513400F9CF4F /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		10C5D48C1B79513F00F9CF4F /* BaseballCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseballCard.h; sourceTree = "<group>"; };
+		10C5D48D1B79513F00F9CF4F /* BaseballCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballCard.m; sourceTree = "<group>"; };
+		10C5D48F1B7953D500F9CF4F /* BaseballPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseballPlayer.h; sourceTree = "<group>"; };
+		10C5D4901B7953D500F9CF4F /* BaseballPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballPlayer.m; sourceTree = "<group>"; };
 		19591EEAF47649EEA6965847 /* libPods-OOP-Cards-ModelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OOP-Cards-ModelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F92936DC853F56AA293AF18 /* Pods-OOP-Cards-ModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OOP-Cards-ModelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OOP-Cards-ModelTests/Pods-OOP-Cards-ModelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		44CFDE92189C389300238AA4 /* OOP-Cards-Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OOP-Cards-Model.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +145,14 @@
 				44CFDEA5189C389300238AA4 /* AppDelegate.m */,
 				44CFDEA7189C389300238AA4 /* Images.xcassets */,
 				44CFDE9C189C389300238AA4 /* Supporting Files */,
+				10C5D4861B79512A00F9CF4F /* Card.h */,
+				10C5D4871B79512A00F9CF4F /* Card.m */,
+				10C5D4891B79513400F9CF4F /* PlayingCard.h */,
+				10C5D48A1B79513400F9CF4F /* PlayingCard.m */,
+				10C5D48C1B79513F00F9CF4F /* BaseballCard.h */,
+				10C5D48D1B79513F00F9CF4F /* BaseballCard.m */,
+				10C5D48F1B7953D500F9CF4F /* BaseballPlayer.h */,
+				10C5D4901B7953D500F9CF4F /* BaseballPlayer.m */,
 			);
 			path = "OOP-Cards-Model";
 			sourceTree = "<group>";
@@ -215,7 +235,7 @@
 		44CFDE8A189C389300238AA4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Al Tyus";
 				TargetAttributes = {
 					44CFDEAC189C389300238AA4 = {
@@ -299,8 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10C5D48E1B79513F00F9CF4F /* BaseballCard.m in Sources */,
 				44CFDEA6189C389300238AA4 /* AppDelegate.m in Sources */,
+				10C5D4911B7953D500F9CF4F /* BaseballPlayer.m in Sources */,
 				44CFDEA2189C389300238AA4 /* main.m in Sources */,
+				10C5D48B1B79513400F9CF4F /* PlayingCard.m in Sources */,
+				10C5D4881B79512A00F9CF4F /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +373,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -388,7 +411,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -447,7 +469,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F92936DC853F56AA293AF18 /* Pods-OOP-Cards-ModelTests.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OOP-Cards-Model.app/OOP-Cards-Model";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -471,7 +492,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AE18893FF788BC760F5798D /* Pods-OOP-Cards-ModelTests.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OOP-Cards-Model.app/OOP-Cards-Model";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
