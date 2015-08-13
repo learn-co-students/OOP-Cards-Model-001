@@ -18,7 +18,7 @@ SpecBegin(PlayingCard)
 describe(@"PlayingCard", ^{
     __block PlayingCard *myCard;
     beforeEach(^{
-        myCard = [[PlayingCard alloc] initWithSuit:@"♠" rank:@5];
+        myCard = [[PlayingCard alloc] initWithSuit:@"♠" Rank:@5];
     });
     
     it(@"exists", ^{
@@ -62,8 +62,8 @@ describe(@"PlayingCard", ^{
     
     describe(@"valid rank with designated initializer", ^{
         
-        PlayingCard *myValidPlayingCard = [[PlayingCard alloc] initWithSuit:@"♥" rank:@13];
-        PlayingCard *myInvalidPlayingCard = [[PlayingCard alloc] initWithSuit:@"♥" rank:@14];
+        PlayingCard *myValidPlayingCard = [[PlayingCard alloc] initWithSuit:@"♥" Rank:@13];
+        PlayingCard *myInvalidPlayingCard = [[PlayingCard alloc] initWithSuit:@"♥" Rank:@14];
 
         it(@"valid ranks should return the value as an NSNumber",^{
             expect(myValidPlayingCard.rank).to.equal(@13);
@@ -99,8 +99,8 @@ describe(@"PlayingCard", ^{
         __block PlayingCard *myInvalidPlayingCard;
         
         beforeAll(^{
-            myValidPlayingCard = [[PlayingCard alloc] initWithSuit:@"♥" rank:@13];
-            myInvalidPlayingCard = [[PlayingCard alloc] initWithSuit:@"X" rank:@14];
+            myValidPlayingCard = [[PlayingCard alloc] initWithSuit:@"♥" Rank:@13];
+            myInvalidPlayingCard = [[PlayingCard alloc] initWithSuit:@"X" Rank:@14];
         });
         
         it(@"valid suits should return suit",^{
