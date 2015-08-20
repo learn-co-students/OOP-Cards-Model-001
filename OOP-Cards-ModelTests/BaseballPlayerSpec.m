@@ -73,12 +73,12 @@ describe(@"BaseballPlayer", ^{
         });
     });
     
-    describe(@"convertLbsToKGsWithLbs", ^{
+   /* describe(@"convertLbsToKGsWithLbs", ^{
         it(@"should perform a weight conversion and return the expected value",^{
             NSNumber *kilos = @(roundf([[BaseballPlayer convertLbsToKGsWithLbs:@180] floatValue]));
             expect(kilos).to.equal(@82);
         });
-    });
+    }); */
     
 #pragma mark - Property setter tests
     
