@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "PlayingCard.h"
+#import "BaseballCard.h"
 
 @implementation AppDelegate
 
@@ -16,6 +18,20 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    PlayingCard *playingCardOne = [[PlayingCard alloc]init];
+    playingCardOne.rank = @10;
+    playingCardOne.suit = @"♥";
+    
+    PlayingCard *playingCardTwo = [[PlayingCard alloc]init];
+    playingCardTwo.rank = @6;
+    playingCardTwo.suit = @"♠";
+    
+    PlayingCard *playingCardThree = [[PlayingCard alloc]init];
+  
+    
+    
+    
     return YES;
 }
 
