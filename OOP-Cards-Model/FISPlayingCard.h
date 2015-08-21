@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Card.h"
 
-@interface PlayingCard : Card
+@interface FISPlayingCard : Card
 
 @property (strong, nonatomic) NSString *suit;
 @property (strong, nonatomic) NSNumber *rank;
