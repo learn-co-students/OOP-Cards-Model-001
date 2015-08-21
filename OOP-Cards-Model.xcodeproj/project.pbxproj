@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2601360B1B87AAB0000E719F /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2601360A1B87AAB0000E719F /* PlayingCard.m */; };
+		26F940FF1B8559CD00BCCF3B /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F940FE1B8559CD00BCCF3B /* Card.m */; };
+		26F941081B855C5500BCCF3B /* BaseballPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F941071B855C5500BCCF3B /* BaseballPlayer.m */; };
+		26F9410E1B85648B00BCCF3B /* BaseballCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F9410D1B85648B00BCCF3B /* BaseballCard.m */; };
 		404F75B720B2496BAE31D058 /* libPods-OOP-Cards-ModelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19591EEAF47649EEA6965847 /* libPods-OOP-Cards-ModelTests.a */; };
 		44CFDE96189C389300238AA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE95189C389300238AA4 /* Foundation.framework */; };
 		44CFDE98189C389300238AA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE97189C389300238AA4 /* CoreGraphics.framework */; };
@@ -38,6 +42,14 @@
 /* Begin PBXFileReference section */
 		19591EEAF47649EEA6965847 /* libPods-OOP-Cards-ModelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OOP-Cards-ModelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F92936DC853F56AA293AF18 /* Pods-OOP-Cards-ModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OOP-Cards-ModelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OOP-Cards-ModelTests/Pods-OOP-Cards-ModelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		260136091B87AAB0000E719F /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = ../../../../.Trash/PlayingCard.h; sourceTree = "<group>"; };
+		2601360A1B87AAB0000E719F /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = ../../../../.Trash/PlayingCard.m; sourceTree = "<group>"; };
+		26F940FD1B8559CD00BCCF3B /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		26F940FE1B8559CD00BCCF3B /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		26F941061B855C5500BCCF3B /* BaseballPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseballPlayer.h; sourceTree = "<group>"; };
+		26F941071B855C5500BCCF3B /* BaseballPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballPlayer.m; sourceTree = "<group>"; };
+		26F9410C1B85648B00BCCF3B /* BaseballCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseballCard.h; sourceTree = "<group>"; };
+		26F9410D1B85648B00BCCF3B /* BaseballCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballCard.m; sourceTree = "<group>"; };
 		44CFDE92189C389300238AA4 /* OOP-Cards-Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OOP-Cards-Model.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CFDE95189C389300238AA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44CFDE97189C389300238AA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,6 +143,14 @@
 			children = (
 				44CFDEA4189C389300238AA4 /* AppDelegate.h */,
 				44CFDEA5189C389300238AA4 /* AppDelegate.m */,
+				26F940FD1B8559CD00BCCF3B /* Card.h */,
+				26F940FE1B8559CD00BCCF3B /* Card.m */,
+				260136091B87AAB0000E719F /* PlayingCard.h */,
+				2601360A1B87AAB0000E719F /* PlayingCard.m */,
+				26F9410C1B85648B00BCCF3B /* BaseballCard.h */,
+				26F9410D1B85648B00BCCF3B /* BaseballCard.m */,
+				26F941061B855C5500BCCF3B /* BaseballPlayer.h */,
+				26F941071B855C5500BCCF3B /* BaseballPlayer.m */,
 				44CFDEA7189C389300238AA4 /* Images.xcassets */,
 				44CFDE9C189C389300238AA4 /* Supporting Files */,
 			);
@@ -300,7 +320,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				44CFDEA6189C389300238AA4 /* AppDelegate.m in Sources */,
+				26F941081B855C5500BCCF3B /* BaseballPlayer.m in Sources */,
+				2601360B1B87AAB0000E719F /* PlayingCard.m in Sources */,
 				44CFDEA2189C389300238AA4 /* main.m in Sources */,
+				26F9410E1B85648B00BCCF3B /* BaseballCard.m in Sources */,
+				26F940FF1B8559CD00BCCF3B /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
