@@ -23,11 +23,15 @@
 @implementation FISCard
 
 + (NSArray *)validSuits {
-    return nil;
+    NSArray *validSuits = @[@"♠", @"♥", @"♣", @"♦"];
+    return validSuits;
 }
 
 + (NSArray *)validRanks {
-    return nil;
+    NSArray *validRanks = @[@"A", @"2", @"3", @"4",
+                            @"5", @"6", @"7", @"8", @"9",
+                            @"10", @"J", @"Q", @"K"];
+    return validRanks;
 }
 
 - (instancetype)init {
@@ -42,8 +46,15 @@
     if (self) {
         _suit = suit;
         _rank = rank;
+        _cardLabel = [NSString stringWithFormat:@"%@%@", suit, rank];
+        NSUInteger indexOfRank = [[FISCard validRanks] indexOfObject:rank];
+        _cardValue = indexOfRank >= 10 ? 10 : indexOfRank + 1;
     }
     return self;
+}
+
+- (NSString *)description {
+    return self.cardLabel;
 }
 
 @end
