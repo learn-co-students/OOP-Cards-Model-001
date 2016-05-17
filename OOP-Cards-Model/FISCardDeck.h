@@ -24,4 +24,6 @@
 
 - (void)shuffleRemainingCards;
 
+- (instancetype)init;
+
 @end

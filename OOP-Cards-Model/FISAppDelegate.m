@@ -2,6 +2,7 @@
 
 #import "FISAppDelegate.h"
 #import "FISCard.h"
+#import "FISCardDeck.h"
 
 @implementation FISAppDelegate
 
@@ -10,6 +11,9 @@
 
     FISCard *testCard = [[FISCard alloc] init];
     NSLog(@"%@", testCard);
+
+    FISCardDeck *cardDeck = [[FISCardDeck alloc] init];
+    NSLog(@"%@", cardDeck);
 
     return YES;
 }
