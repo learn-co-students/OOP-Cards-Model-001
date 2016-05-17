@@ -69,6 +69,9 @@
     NSArray *remaingCards = self.remainingCards;
     for (NSUInteger i=0; i < [remaingCards count]; i++) {
         FISCard *card = remaingCards[i];
+        if(i > 0 && ![card.suit isEqualToString:[remaingCards[i-1] suit]]) {
+            [description appendString: @"\n"];
+        }
         [description appendString: card.cardLabel];
     }
     return description;
